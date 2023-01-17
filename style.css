@@ -1,0 +1,321 @@
+html{
+  scroll-behavior: smooth;
+  color: black;
+}
+body{
+height: auto;
+background-color: rgb(59, 59, 59);
+margin: 0;
+text-align: center;
+display: block;
+padding-bottom: 120px;
+}
+header{
+  height: 250px;
+}
+h1{
+  color: antiquewhite;
+  font-family: arial;
+  font-size: 40px;
+  margin-top: 240px;
+  width: 80%;
+  margin-left: 10%;
+  line-height: 90px;
+}
+h3{
+  font-size: 15px;
+  font-style: italic;
+  font-weight: lighter;
+}
+.bouttonnav{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  visibility: visible;
+  top: 190px;
+  text-align: center;
+  z-index: 7;
+}
+.barre{
+  width: 55px;
+  height: 6px;
+  background-color: antiquewhite;
+  margin-top: 8px;
+}
+#barre3{
+  width: 30px;
+}
+.croix #barre1{
+  transform: rotate(45deg);
+  transition: 0.2s;
+}
+.croix #barre2{
+  visibility: hidden;
+}
+.croix #barre3{
+  width: 55px;
+  transform: rotate(-45deg) translateY(-20px) translateX(20px);
+  transition: 0.2s;
+}
+.bouttonnav{
+  cursor: pointer;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  top: 260px;
+  z-index: 6;
+  transition: 0.5s;
+  padding-top: 100px;
+}
+.montrenav{
+  visibility: visible;
+  background-color: black;
+}
+ul{
+ width: 600px;
+ align-items: center;
+ padding: 0;
+ display: grid;
+ margin: auto;
+}
+li{
+  list-style: none;
+  margin-bottom: 100px;
+}
+a{
+  text-decoration: none;
+  color: floralwhite;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 40px;
+  transition-duration: 0.2s;
+}
+a:hover{
+  scale: 1.05;
+}
+nav a{
+  color: floralwhite;
+}
+@keyframes haut{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.logo{
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+}
+.pourvous{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+span::before{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    align-self: center;
+	font-size: 60px;
+    color: antiquewhite;
+    padding: 10px;
+	content: " Commerçants";
+	margin-left: 0;
+	animation: aaa 8s;
+}
+@keyframes aaa {
+	0%{
+		content: " Restaurants";
+	}
+	20%{
+		content: " Boulangers"
+	}
+	40%{
+		content: " Bouchers"
+	}
+	60%{
+		content: " Poissoniers"
+    }
+    70%{
+		content: " Primeurs"
+    }
+    75%{
+		content: " Restaurants"
+    }
+    77.5%{
+		content: " Boulangers"
+    }
+    79%{
+		content: " Bouchers"
+    }
+    80%{
+		content: " Poissoniers"
+    }
+    81%{
+		content: " Primeurs"
+    }
+    82%{
+		content: " Restaurants"
+    }
+    83%{
+		content: " Boulangers"
+    }
+    84%{
+		content: " Bouchers"
+    }
+    85%{
+		content: " Poissoniers"
+    }
+    86%{
+		content: " Primeurs"
+    }
+    87%{
+		content: " Commerçants"
+    }
+}
+.cta{
+  margin-top: 60px;
+  background-color: #1b8000;
+  color: antiquewhite;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  padding: 24px;
+  border: none;
+  border-radius: 24px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.how{
+  margin-top: 960px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: antiquewhite;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.how img{
+  width: 80%;
+  height: auto;
+}
+.partiea, .partieb{
+  margin-top: 120px;
+}
+.list{
+  margin-top: 240px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: antiquewhite;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.faq{
+  margin-top: 240px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: antiquewhite;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.question{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  font-style: initial;
+}
+.faq p{
+  margin-bottom: 120px;
+}
+footer{
+  height: 0;
+  background-color: black;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+
+@media screen and (min-width: 1000px){
+  h1{
+    
+  }
+  h2{
+    font-size: 30px;
+  }
+  .question{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 14px;
+    font-family: arial;
+    margin-top: 200px;
+    margin-right: 100px;
+  }
+  p{
+    text-align: justify;
+    font-size: 18px;
+    width: 300px;
+    height: 50px;
+  }
+  .how{
+    margin-top: 720px;
+  }
+  .how p{
+    height: auto;
+    line-height: 30px;
+  }
+  .flex{
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .partiea{
+    margin-right: 200px;
+    margin-top: 60px;
+  }
+  .partieb{
+    margin-top: 60px;
+  }
+  .how img{
+    width: 300px;
+    height: auto;
+  }
+  .cta{
+    font-size: 15px;
+    padding: 9px;
+  }
+  .cta:hover{
+    cursor: pointer;
+  }
+  .list p, .faq p{
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+  }
+  .faq{
+    padding-bottom: 240px;
+  }
+  #materiel{
+    margin-bottom: 120px;
+  }
+  a{
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  nav{
+    height: auto;
+  }
+  nav a{
+    font-size: 24px;
+  }
+}
