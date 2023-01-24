@@ -131,7 +131,7 @@ span::before{
 	font-size: 60px;
     color: antiquewhite;
     padding: 10px;
-	content: " Commerçants";
+	content: " Commerces";
 	margin-left: 0;
 	animation: aaa 8s;
 }
@@ -182,7 +182,7 @@ span::before{
 		content: " Primeurs"
     }
     87%{
-		content: " Commerçants"
+		content: " Commerces"
     }
 }
 .cta{
@@ -197,8 +197,39 @@ span::before{
   letter-spacing: 2px;
   font-weight: bold;
 }
+.caroussel{
+  display: flex;
+  overflow-x: scroll;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-size: 30px;
+  margin-top: 60px;
+}
+.caroussel p{
+  width: 420px;
+  margin: 60px;
+  text-align: center;
+}
+.caroussel img{
+  width: 420px;
+}
+.prealable{
+  margin-top: 1480px;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+}
+.prealable p{
+  width: 80%;
+  margin-left: 10%;
+  line-height: 60px;
+}
+.prealable a{
+  color: greenyellow;
+  text-decoration: underline;
+}
 .how{
-  margin-top: 960px;
+  margin-top: 240px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: antiquewhite;
   padding-left: 10%;
@@ -210,13 +241,6 @@ span::before{
 }
 .partiea, .partieb{
   margin-top: 120px;
-}
-.list{
-  margin-top: 240px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: antiquewhite;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .faq{
   margin-top: 240px;
@@ -246,7 +270,9 @@ footer{
 
 @media screen and (min-width: 1000px){
   h1{
-    
+    font-size: 24px;
+    width: 50%;
+    margin-left: 25%;
   }
   h2{
     font-size: 30px;
@@ -273,6 +299,14 @@ footer{
     height: auto;
     line-height: 30px;
   }
+  .prealable{
+    margin-top: 1080px;
+  }
+  .prealable p{
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+  }
   .flex{
     display: flex;
     margin-left: 50%;
@@ -285,6 +319,9 @@ footer{
   .partieb{
     margin-top: 60px;
   }
+  .how{
+    margin-top: 240px;
+  }
   .how img{
     width: 300px;
     height: auto;
@@ -293,10 +330,15 @@ footer{
     font-size: 15px;
     padding: 9px;
   }
+  .caroussel{
+    height: 420px;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 0 96%);
+
+  }
   .cta:hover{
     cursor: pointer;
   }
-  .list p, .faq p{
+  .faq p{
     text-align: center;
     margin-left: 50%;
     transform: translateX(-50%);
